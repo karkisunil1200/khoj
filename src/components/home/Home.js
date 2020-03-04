@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 
 import Navbar from '../navbar/Navbar';
 import SearchBar from '../searchBar/SearchBar';
+import SearchList from '../searchList/SearchList';
 
 const Home = () => {
   return (
@@ -10,15 +11,9 @@ const Home = () => {
       <Navbar />
       <h2>Welcome to your HomePage</h2>
       <SearchBar />
+      <SearchList />
     </div>
   );
 };
 
-const mapStateToProps = ({searchPictureReducer}) => {
-  console.log('THis is from Home ', searchPictureReducer);
-  return {};
-};
-export default connect(
-  mapStateToProps,
-  {}
-)(Home);
+export default Home;

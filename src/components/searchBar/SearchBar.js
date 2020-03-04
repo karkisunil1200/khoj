@@ -9,14 +9,13 @@ const SearchBar = props => {
 
   const handleChange = event => {
     setTerm(event.target.value);
-    console.log(event.target.value);
+    // console.log(event.target.value);
   };
 
   const handleSubmit = event => {
     event.preventDefault();
 
     props.searchPicture(term);
-    alert(`Term submitted:${term}`);
     setTerm('');
   };
 
@@ -37,7 +36,7 @@ const SearchBar = props => {
 };
 
 const mapStateToProps = ({searchPictureReducer}) => {
-  console.log('this is search mapStatetoProps ', searchPictureReducer);
+  // console.log('this is search mapStatetoProps ', searchPictureReducer);
   return {};
 };
 
