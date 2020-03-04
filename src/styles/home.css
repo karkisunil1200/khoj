@@ -1,0 +1,12 @@
+.home-container {
+  border: 3px solid green;
+  width: 100%;
+  height: 1000px;
+  padding: 30px;
+}
+
+.home-title {
+  color: red;
+  text-align: center;
+  margin-top: 30px;
+}

@@ -5,13 +5,16 @@ import Navbar from '../navbar/Navbar';
 import SearchBar from '../searchBar/SearchBar';
 import SearchList from '../searchList/SearchList';
 
+import '../../styles/home.css';
+
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home-container'>
       <Navbar />
-      <h2>Welcome to your HomePage</h2>
-      <SearchBar />
-      <SearchList />
+      <div className='home'>
+        <h2 className='home-title'>Welcome to your HomePage</h2>
+        <SearchList />
+      </div>
     </div>
   );
 };

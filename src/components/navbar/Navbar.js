@@ -18,6 +18,10 @@ const Navbar = () => {
           Logout
         </Link>
       </div>
+
+      <div className='navbar-search'>
+        <SearchBar />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 .navbar {
   padding: 30px;
   background: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar__list {
